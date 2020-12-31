@@ -6,19 +6,19 @@ include_once 'index.php';
  */
 assert(
     capMe(["mavis", "senaida", "letty"]) === ["Mavis", "Senaida", "Letty"],
-    'capMe() should  return first array with capitalized letter of each array item'
+    'capMe() should return array where first letter of each item are capitalized'
 );
 assert(
     capMe(["samuel", "MABELLE", "letitia", "meridith"]) === ["Samuel", "Mabelle", "Letitia", "Meridith"],
-    'capMe() should  return first array with capitalized letter of each array item'
+    'capMe() should return array where first letter of each item are capitalized even if all letters in an item are capitalized'
 );
 assert(
     capMe(["Slyvia", "Kristal", "Sharilyn", "Calista"]) === ["Slyvia", "Kristal", "Sharilyn", "Calista"],
-    'capMe() should  return first array with capitalized letter of each array item'
+    'capMe() should return array where first letter of each item are capitalized even if it is already done'
 );
 
 /**
- * isValidPhoneNumber tests
+ * isValidPhoneNumber() tests
  */
 assert(
     isValidPhoneNumber("(123) 456-7890") === true,
